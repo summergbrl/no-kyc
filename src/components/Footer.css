@@ -1,8 +1,72 @@
 .footer {
   background: var(--dark-card);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  padding: 4rem 0 2rem;
-  margin-top: 4rem;
+  border-top: 1px solid var(--border-color);
+  padding: 3rem 0 2rem;
+  margin-top: 2rem;
+}
+
+/* SEO Section */
+.footer-seo {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 3rem;
+}
+
+.seo-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.seo-description {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto 2.5rem;
+}
+
+.seo-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+.seo-feature h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.seo-feature p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.seo-crypto {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(59, 130, 246, 0.05);
+  border-radius: 12px;
+  border: 1px solid rgba(59, 130, 246, 0.1);
+}
+
+.seo-crypto h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.seo-crypto p {
+  font-size: 14px;
+  color: var(--text-secondary);
 }
 
 .footer-content {
@@ -151,6 +215,15 @@
 
 /* Mobile Responsive */
 @media (max-width: 1024px) {
+  .seo-title {
+    font-size: 24px;
+  }
+
+  .seo-features {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
   .footer-content {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
@@ -163,7 +236,24 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 3rem 0 1.5rem;
+    padding: 2rem 0 1.5rem;
+  }
+
+  .footer-seo {
+    padding: 2rem 0;
+  }
+
+  .seo-title {
+    font-size: 20px;
+  }
+
+  .seo-description {
+    font-size: 14px;
+  }
+
+  .seo-features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 
   .footer-content {

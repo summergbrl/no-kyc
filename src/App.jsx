@@ -34,7 +34,6 @@ function App() {
         <GameCategories />
         <TopGames />
         <NewGames />
-        <AnonymousContent />
         <Footer />
       </main>
     </div>
