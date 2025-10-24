@@ -1,11 +1,26 @@
 .App {
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
 }
 
-main {
+.main-content {
   flex: 1;
+  margin-left: 240px;
+  margin-top: 70px;
+  min-height: calc(100vh - 70px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 1024px) {
+  .main-content {
+    margin-left: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
 }
 
 /* Animations */

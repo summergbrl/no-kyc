@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import LoadingScreen from './components/LoadingScreen'
-import Header from './components/Header'
+import Sidebar from './components/Sidebar'
+import TopBar from './components/TopBar'
 import Hero from './components/Hero'
 import BonusSlider from './components/BonusSlider'
 import GameCategories from './components/GameCategories'
@@ -25,16 +26,17 @@ function App() {
   return (
     <div className="App">
       {loading && <LoadingScreen />}
-      <Header />
-      <main>
+      <Sidebar />
+      <TopBar />
+      <main className="main-content">
         <Hero />
         <BonusSlider />
         <GameCategories />
         <TopGames />
         <NewGames />
         <AnonymousContent />
+        <Footer />
       </main>
-      <Footer />
     </div>
   )
 }
