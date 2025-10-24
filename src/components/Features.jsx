@@ -157,13 +157,30 @@ const Features = () => {
             variants={fadeInUp}
           >
             <h3><IoWalletSharp /> Supported Crypto</h3>
-            <div className="crypto-list">
-              <span><FaBitcoin /> Bitcoin</span>
-              <span><FaEthereum /> Ethereum</span>
-              <span>💲 USDT</span>
-              <span>Ł Litecoin</span>
-              <span>ɱ Monero</span>
-              <span>+ More</span>
+            <div className="crypto-badges">
+              <div className="crypto-badge">
+                <FaBitcoin />
+                <span>Bitcoin</span>
+              </div>
+              <div className="crypto-badge">
+                <FaEthereum />
+                <span>Ethereum</span>
+              </div>
+              <div className="crypto-badge">
+                <span className="crypto-symbol">$</span>
+                <span>USDT</span>
+              </div>
+              <div className="crypto-badge">
+                <span className="crypto-symbol">Ł</span>
+                <span>Litecoin</span>
+              </div>
+              <div className="crypto-badge">
+                <span className="crypto-symbol">ɱ</span>
+                <span>Monero</span>
+              </div>
+              <div className="crypto-badge more">
+                <span>+ More</span>
+              </div>
             </div>
           </motion.div>
         </div>
