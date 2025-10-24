@@ -7,7 +7,7 @@ import BonusSlider from './components/BonusSlider'
 import GameCategories from './components/GameCategories'
 import TopGames from './components/TopGames'
 import NewGames from './components/NewGames'
-import AnonymousContent from './components/AnonymousContent'
+import Features from './components/Features'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -34,6 +34,7 @@ function App() {
         <GameCategories />
         <TopGames />
         <NewGames />
+        <Features />
         <Footer />
       </main>
     </div>
