@@ -1,4 +1,5 @@
 import React, { useRef, useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import './BonusSlider.css'
 
 const bonuses = [
@@ -56,40 +57,109 @@ const BonusSlider = () => {
   }
 
   return (
-    <section className="bonus-slider-section">
+    <motion.section 
+      className="bonus-slider-section"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+    >
       <div className="container">
         <div className="bonus-slider">
           <div className="slider-container">
             <div className="slider-track" ref={sliderRef}>
-              {bonuses.map((bonus) => (
-                <div key={bonus.id} className="bonus-card">
-                  <div 
+              {bonuses.map((bonus, idx) => (
+                <motion.div 
+                  key={bonus.id} 
+                  className="bonus-card"
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: idx * 0.1 }}
+                  whileHover={{ 
+                    scale: 1.02,
+                    transition: { duration: 0.3 }
+                  }}
+                >
+                  <motion.div 
                     className="bonus-card-background" 
                     style={{ background: bonus.gradient }}
-                  ></div>
+                    animate={{
+                      opacity: currentSlide === idx ? [0.8, 1, 0.8] : 0.8
+                    }}
+                    transition={{
+                      duration: 3,
+                      repeat: currentSlide === idx ? Infinity : 0,
+                      ease: "easeInOut"
+                    }}
+                  />
                   <div className="bonus-card-content">
-                    <h3 className="bonus-title">{bonus.title}</h3>
-                    <p className="bonus-amount">{bonus.amount}</p>
-                    <button className="btn btn-white">Join now</button>
+                    <motion.h3 
+                      className="bonus-title"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: 0.2 }}
+                    >
+                      {bonus.title}
+                    </motion.h3>
+                    <motion.p 
+                      className="bonus-amount"
+                      initial={{ opacity: 0, x: -20 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: 0.3 }}
+                    >
+                      {bonus.amount}
+                    </motion.p>
+                    <motion.button 
+                      className="btn btn-white"
+                      initial={{ opacity: 0, y: 20 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      viewport={{ once: true }}
+                      transition={{ duration: 0.6, delay: 0.4 }}
+                      whileHover={{ 
+                        scale: 1.1,
+                        boxShadow: "0 10px 30px rgba(255, 255, 255, 0.3)",
+                        transition: { duration: 0.2 }
+                      }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      Join now
+                    </motion.button>
                   </div>
-                </div>
+                </motion.div>
               ))}
             </div>
           </div>
           
-          <div className="slider-dots">
+          <motion.div 
+            className="slider-dots"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+          >
             {bonuses.map((_, index) => (
-              <button
+              <motion.button
                 key={index}
                 className={`slider-dot ${currentSlide === index ? 'active' : ''}`}
                 onClick={() => goToSlide(index)}
                 aria-label={`Go to slide ${index + 1}`}
+                whileHover={{ scale: 1.3 }}
+                whileTap={{ scale: 0.9 }}
+                animate={{
+                  scale: currentSlide === index ? [1, 1.2, 1] : 1
+                }}
+                transition={{
+                  scale: { duration: 0.5, repeat: currentSlide === index ? Infinity : 0 }
+                }}
               />
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
-    </section>
+    </motion.section>
   )
 }
 

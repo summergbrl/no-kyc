@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 import { 
   IoLockClosedSharp, IoFlashSharp, IoCashSharp, IoGlobeSharp, IoTrendingUpSharp,
   IoShieldCheckmarkSharp, IoWalletSharp, IoSearchSharp, IoCheckmarkCircleSharp,
@@ -16,20 +17,67 @@ import {
 import './AnonymousContent.css'
 
 const AnonymousContent = () => {
+  // Animation variants for sections
+  const fadeInUp = {
+    hidden: { opacity: 0, y: 40 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.6, ease: "easeOut" }
+    }
+  }
+
+  const staggerContainer = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.1
+      }
+    }
+  }
+
+  const cardVariant = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { 
+      opacity: 1, 
+      y: 0,
+      transition: { duration: 0.5 }
+    }
+  }
+
   return (
     <section className="anonymous-content">
       <div className="container">
         <div className="content-wrapper">
           
           {/* Main Title */}
-          <div className="content-header">
-            <h1 className="main-title">
+          <motion.div 
+            className="content-header"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-100px" }}
+            variants={fadeInUp}
+          >
+            <motion.h1 
+              className="main-title"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.8 }}
+            >
               Play Anonymous With No-KYCasino for UAE Players 2025
-            </h1>
-            <p className="main-intro">
+            </motion.h1>
+            <motion.p 
+              className="main-intro"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               Welcome to the world of anonymous crypto gaming. We're a no-KYC casino, which means you can play, win, and withdraw without ever showing us your ID. No passport scans. No utility bills. No waiting for verification approval.
-            </p>
-          </div>
+            </motion.p>
+          </motion.div>
 
           {/* What Makes Us Different */}
           <div className="content-section">
@@ -48,72 +96,229 @@ const AnonymousContent = () => {
           </div>
 
           {/* How Anonymous Gaming Works */}
-          <div className="content-section">
+          <motion.div 
+            className="content-section"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={fadeInUp}
+          >
             <h2 className="section-heading">How Anonymous Gaming Works</h2>
             
-            <div className="steps-grid">
-              <div className="step-card">
-                <div className="step-number">1</div>
+            <motion.div 
+              className="steps-grid"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <motion.div 
+                className="step-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10, 
+                  boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="step-number"
+                  animate={{ 
+                    rotate: [0, 360],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ 
+                    duration: 3, 
+                    repeat: Infinity, 
+                    repeatDelay: 5,
+                    ease: "easeInOut"
+                  }}
+                >1</motion.div>
                 <h3 className="step-title">Quick Registration</h3>
                 <p>Create your account in under 30 seconds. We only need an email address—that's it. Some players even use temporary email addresses for extra privacy.</p>
-              </div>
+              </motion.div>
 
-              <div className="step-card">
-                <div className="step-number">2</div>
+              <motion.div 
+                className="step-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10, 
+                  boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="step-number"
+                  animate={{ 
+                    rotate: [0, 360],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ 
+                    duration: 3, 
+                    repeat: Infinity, 
+                    repeatDelay: 5,
+                    delay: 0.5,
+                    ease: "easeInOut"
+                  }}
+                >2</motion.div>
                 <h3 className="step-title">Deposit Cryptocurrency</h3>
                 <p>Send Bitcoin, Ethereum, or other supported cryptocurrencies to your unique wallet address. Funds appear in your balance within minutes after blockchain confirmation.</p>
-              </div>
+              </motion.div>
 
-              <div className="step-card">
-                <div className="step-number">3</div>
+              <motion.div 
+                className="step-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10, 
+                  boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="step-number"
+                  animate={{ 
+                    rotate: [0, 360],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ 
+                    duration: 3, 
+                    repeat: Infinity, 
+                    repeatDelay: 5,
+                    delay: 1,
+                    ease: "easeInOut"
+                  }}
+                >3</motion.div>
                 <h3 className="step-title">Play Instantly</h3>
                 <p>Access our complete game library immediately. No verification delays, no document reviews, no waiting periods.</p>
-              </div>
+              </motion.div>
 
-              <div className="step-card">
-                <div className="step-number">4</div>
+              <motion.div 
+                className="step-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10, 
+                  boxShadow: "0 20px 40px rgba(139, 92, 246, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="step-number"
+                  animate={{ 
+                    rotate: [0, 360],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ 
+                    duration: 3, 
+                    repeat: Infinity, 
+                    repeatDelay: 5,
+                    delay: 1.5,
+                    ease: "easeInOut"
+                  }}
+                >4</motion.div>
                 <h3 className="step-title">Withdraw Anytime</h3>
                 <p>Request withdrawals to your cryptocurrency wallet whenever you want. We process most withdrawals within 15-30 minutes. Your first withdrawal goes to your original deposit address for security.</p>
-              </div>
-            </div>
-          </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
 
           {/* Why UAE Players Choose */}
-          <div className="content-section">
+          <motion.div 
+            className="content-section"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={fadeInUp}
+          >
             <h2 className="section-heading">Why UAE Players Choose Anonymous Casinos</h2>
             
-            <div className="benefits-grid">
-              <div className="benefit-card">
-                <div className="benefit-icon"><IoLockClosedSharp /></div>
+            <motion.div 
+              className="benefits-grid"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <motion.div 
+                className="benefit-card"
+                variants={cardVariant}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+              >
+                <motion.div 
+                  className="benefit-icon"
+                  animate={{ rotate: [0, 10, -10, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, repeatDelay: 2 }}
+                >
+                  <IoLockClosedSharp />
+                </motion.div>
                 <h3 className="benefit-title">Complete Privacy</h3>
                 <p>Your gambling activity stays between you and the blockchain. We don't collect government IDs, utility bills, or personal documents. Your wallet address is your identity here.</p>
-              </div>
+              </motion.div>
 
-              <div className="benefit-card">
-                <div className="benefit-icon"><IoFlashSharp /></div>
+              <motion.div 
+                className="benefit-card"
+                variants={cardVariant}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+              >
+                <motion.div 
+                  className="benefit-icon"
+                  animate={{ scale: [1, 1.2, 1] }}
+                  transition={{ duration: 2, repeat: Infinity, repeatDelay: 3 }}
+                >
+                  <IoFlashSharp />
+                </motion.div>
                 <h3 className="benefit-title">Instant Access</h3>
                 <p>Register and play within minutes. No document upload queues or multi-day verification processes are holding up your gaming.</p>
-              </div>
+              </motion.div>
 
-              <div className="benefit-card">
-                <div className="benefit-icon"><IoCashSharp /></div>
+              <motion.div 
+                className="benefit-card"
+                variants={cardVariant}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+              >
+                <motion.div 
+                  className="benefit-icon"
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 2 }}
+                >
+                  <IoCashSharp />
+                </motion.div>
                 <h3 className="benefit-title">Fast Withdrawals</h3>
                 <p>No manual verification reviews delaying your winnings. Cryptocurrency transactions are processed according to blockchain speeds—typically 15-30 minutes.</p>
-              </div>
+              </motion.div>
 
-              <div className="benefit-card">
-                <div className="benefit-icon"><IoGlobeSharp /></div>
+              <motion.div 
+                className="benefit-card"
+                variants={cardVariant}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+              >
+                <motion.div 
+                  className="benefit-icon"
+                  animate={{ rotate: [0, 360] }}
+                  transition={{ duration: 8, repeat: Infinity, ease: "linear" }}
+                >
+                  <IoGlobeSharp />
+                </motion.div>
                 <h3 className="benefit-title">VPN Friendly</h3>
                 <p>We don't restrict access based on location. As long as you have cryptocurrency, you can play. Many UAE players use VPN for added privacy—we have no issue with that.</p>
-              </div>
+              </motion.div>
 
-              <div className="benefit-card">
-                <div className="benefit-icon"><IoTrendingUpSharp /></div>
+              <motion.div 
+                className="benefit-card"
+                variants={cardVariant}
+                whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
+              >
+                <motion.div 
+                  className="benefit-icon"
+                  animate={{ y: [0, -5, 5, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, repeatDelay: 1 }}
+                >
+                  <IoTrendingUpSharp />
+                </motion.div>
                 <h3 className="benefit-title">Higher Limits</h3>
                 <p>Without verification bottlenecks, we can offer higher withdrawal limits than traditional casinos. Move your winnings when you want, how much you want.</p>
-              </div>
-            </div>
-          </div>
+              </motion.div>
+            </motion.div>
+          </motion.div>
 
           {/* Understanding Verification Levels */}
           <div className="content-section">
@@ -171,43 +376,128 @@ const AnonymousContent = () => {
           </div>
 
           {/* Supported Cryptocurrencies */}
-          <div className="content-section">
+          <motion.div 
+            className="content-section"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={fadeInUp}
+          >
             <h2 className="section-heading">Supported Cryptocurrencies</h2>
             <p>We accept multiple cryptocurrencies to maximize your privacy and convenience:</p>
             
-            <div className="crypto-grid">
-              <div className="crypto-card">
-                <div className="crypto-symbol"><FaBitcoin /></div>
+            <motion.div 
+              className="crypto-grid"
+              variants={staggerContainer}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+            >
+              <motion.div 
+                className="crypto-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10,
+                  boxShadow: "0 15px 30px rgba(251, 191, 36, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="crypto-symbol"
+                  animate={{ rotate: [0, 360] }}
+                  transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
+                >
+                  <FaBitcoin />
+                </motion.div>
                 <h4>Bitcoin (BTC)</h4>
                 <p>Most widely used. Offers strong pseudonymity and universal acceptance.</p>
-              </div>
+              </motion.div>
 
-              <div className="crypto-card">
-                <div className="crypto-symbol"><FaEthereum /></div>
+              <motion.div 
+                className="crypto-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10,
+                  boxShadow: "0 15px 30px rgba(251, 191, 36, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="crypto-symbol"
+                  animate={{ y: [0, -10, 0] }}
+                  transition={{ duration: 3, repeat: Infinity, repeatDelay: 1 }}
+                >
+                  <FaEthereum />
+                </motion.div>
                 <h4>Ethereum (ETH)</h4>
                 <p>Fast confirmations and smart contract capability for provably fair games.</p>
-              </div>
+              </motion.div>
 
-              <div className="crypto-card">
-                <div className="crypto-symbol"><SiLitecoin /></div>
+              <motion.div 
+                className="crypto-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10,
+                  boxShadow: "0 15px 30px rgba(251, 191, 36, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="crypto-symbol"
+                  animate={{ rotate: [0, 15, -15, 0] }}
+                  transition={{ duration: 4, repeat: Infinity, repeatDelay: 2 }}
+                >
+                  <SiLitecoin />
+                </motion.div>
                 <h4>Litecoin (LTC)</h4>
                 <p>Faster than Bitcoin with lower fees. Popular for quick deposits and withdrawals.</p>
-              </div>
+              </motion.div>
 
-              <div className="crypto-card">
-                <div className="crypto-symbol"><SiTether /></div>
+              <motion.div 
+                className="crypto-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10,
+                  boxShadow: "0 15px 30px rgba(251, 191, 36, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="crypto-symbol"
+                  animate={{ scale: [1, 1.15, 1] }}
+                  transition={{ duration: 2.5, repeat: Infinity, repeatDelay: 2 }}
+                >
+                  <SiTether />
+                </motion.div>
                 <h4>USDT (Tether)</h4>
                 <p>Stablecoin pegged to USD. Protects against crypto price volatility.</p>
-              </div>
+              </motion.div>
 
-              <div className="crypto-card">
-                <div className="crypto-symbol"><SiMonero /></div>
+              <motion.div 
+                className="crypto-card"
+                variants={cardVariant}
+                whileHover={{ 
+                  y: -10,
+                  boxShadow: "0 15px 30px rgba(251, 191, 36, 0.3)",
+                  transition: { duration: 0.3 }
+                }}
+              >
+                <motion.div 
+                  className="crypto-symbol"
+                  animate={{ 
+                    opacity: [1, 0.5, 1],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ duration: 3, repeat: Infinity, repeatDelay: 1 }}
+                >
+                  <SiMonero />
+                </motion.div>
                 <h4>Monero (XMR)</h4>
                 <p>Maximum privacy. Even blockchain analysis can't trace Monero transactions.</p>
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
             <p className="crypto-note">More cryptocurrencies supported—check our deposit page for the complete list.</p>
-          </div>
+          </motion.div>
 
           {/* UAE Players Info */}
           <div className="content-section info-section">
@@ -542,20 +832,92 @@ const AnonymousContent = () => {
           </div>
 
           {/* CTA Section */}
-          <div className="cta-section">
-            <h2 className="cta-title">Ready to Play?</h2>
-            <p className="cta-description">
+          <motion.div 
+            className="cta-section"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, margin: "-50px" }}
+            variants={fadeInUp}
+          >
+            <motion.h2 
+              className="cta-title"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6 }}
+            >
+              Ready to Play?
+            </motion.h2>
+            <motion.p 
+              className="cta-description"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
               Experience truly anonymous cryptocurrency gambling. No documents, no verification delays, no compromises on privacy.
-            </p>
-            <div className="cta-highlights">
-              <p><IoCheckmarkSharp className="inline-icon" /> Your wallet address is your identity</p>
-              <p><IoCheckmarkSharp className="inline-icon" /> Your crypto is your stake</p>
-              <p><IoCheckmarkSharp className="inline-icon" /> Your privacy is guaranteed</p>
-            </div>
-            <button className="btn btn-large btn-primary cta-button">
-              Start Playing Now
-            </button>
-          </div>
+            </motion.p>
+            <motion.div 
+              className="cta-highlights"
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true }}
+              variants={staggerContainer}
+            >
+              <motion.p variants={cardVariant}>
+                <motion.span 
+                  animate={{ scale: [1, 1.3, 1] }}
+                  transition={{ duration: 1, repeat: Infinity, repeatDelay: 3 }}
+                >
+                  <IoCheckmarkSharp className="inline-icon" />
+                </motion.span> 
+                Your wallet address is your identity
+              </motion.p>
+              <motion.p variants={cardVariant}>
+                <motion.span 
+                  animate={{ scale: [1, 1.3, 1] }}
+                  transition={{ duration: 1, repeat: Infinity, repeatDelay: 3, delay: 0.3 }}
+                >
+                  <IoCheckmarkSharp className="inline-icon" />
+                </motion.span> 
+                Your crypto is your stake
+              </motion.p>
+              <motion.p variants={cardVariant}>
+                <motion.span 
+                  animate={{ scale: [1, 1.3, 1] }}
+                  transition={{ duration: 1, repeat: Infinity, repeatDelay: 3, delay: 0.6 }}
+                >
+                  <IoCheckmarkSharp className="inline-icon" />
+                </motion.span> 
+                Your privacy is guaranteed
+              </motion.p>
+            </motion.div>
+            <motion.button 
+              className="btn btn-large btn-primary cta-button"
+              initial={{ opacity: 0, y: 30 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.4 }}
+              whileHover={{ 
+                scale: 1.1,
+                boxShadow: "0 20px 60px rgba(139, 92, 246, 0.5)",
+                transition: { duration: 0.3 }
+              }}
+              whileTap={{ scale: 0.95 }}
+              animate={{
+                boxShadow: [
+                  "0 10px 40px rgba(139, 92, 246, 0.3)",
+                  "0 10px 60px rgba(139, 92, 246, 0.5)",
+                  "0 10px 40px rgba(139, 92, 246, 0.3)"
+                ]
+              }}
+              transition={{
+                boxShadow: { duration: 2, repeat: Infinity, ease: "easeInOut" }
+              }}
+            >
+              Start Playing Now!!!
+            </motion.button>
+          </motion.div>
 
           {/* Disclaimer */}
           <div className="disclaimer">
