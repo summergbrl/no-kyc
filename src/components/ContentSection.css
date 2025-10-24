@@ -139,10 +139,18 @@
 }
 
 .security-item h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+}
+
+.security-item h4 svg {
+  color: var(--primary-blue);
+  font-size: 20px;
 }
 
 .security-item p {
@@ -168,10 +176,18 @@
 }
 
 .info-card-item h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+}
+
+.info-card-item h4 svg {
+  color: var(--primary-yellow);
+  font-size: 20px;
 }
 
 .info-card-item p {
@@ -251,10 +267,18 @@
 }
 
 .game-type h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+}
+
+.game-type h4 svg {
+  color: var(--primary-purple);
+  font-size: 20px;
 }
 
 .game-type p {
@@ -287,10 +311,18 @@
 }
 
 .bonus-item h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+}
+
+.bonus-item h4 svg {
+  color: var(--primary-yellow);
+  font-size: 20px;
 }
 
 .bonus-item p {
@@ -352,10 +384,18 @@
 }
 
 .practice-item h4 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
   font-size: 16px;
   font-weight: 600;
   color: var(--text-primary);
   margin-bottom: 0.75rem;
+}
+
+.practice-item h4 svg {
+  color: var(--primary-blue);
+  font-size: 20px;
 }
 
 .practice-item p {
@@ -416,9 +456,16 @@
 }
 
 .reason-icon {
-  font-size: 32px;
-  display: block;
-  margin-bottom: 1rem;
+  font-size: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: rgba(59, 130, 246, 0.1);
+  color: var(--primary-blue);
 }
 
 .reason-item h4 {

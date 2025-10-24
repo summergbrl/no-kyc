@@ -1,5 +1,15 @@
 import React from 'react'
 import { motion } from 'framer-motion'
+import { 
+  IoCheckmarkCircleSharp, IoCloseCircleSharp, IoShieldCheckmarkSharp, 
+  IoWalletSharp, IoPulseSharp, IoCheckmarkSharp, IoAlertCircleSharp,
+  IoWarningSharp, IoCashSharp, IoGameControllerSharp, IoTvSharp, 
+  IoCardSharp, IoRocketSharp, IoDiceSharp, IoFootballSharp,
+  IoGiftSharp, IoReloadSharp, IoTrendingUpSharp, IoDiamondSharp,
+  IoTrophySharp, IoLockClosedSharp, IoFlashSharp, IoGlobeSharp,
+  IoKeySharp, IoPhonePortraitSharp, IoBriefcaseSharp, IoLocationSharp
+} from 'react-icons/io5'
+import { FaBitcoin } from 'react-icons/fa'
 import './ContentSection.css'
 
 const ContentSection = () => {
@@ -53,22 +63,22 @@ const ContentSection = () => {
           
           <div className="security-features">
             <div className="security-item">
-              <h4>🔗 Blockchain Transparency</h4>
+              <h4><IoShieldCheckmarkSharp /> Blockchain Transparency</h4>
               <p>Every transaction recorded on public ledgers. Anyone can verify our deposits, bets, and withdrawals without revealing player identities. Complete transparency without compromising anonymity.</p>
             </div>
 
             <div className="security-item">
-              <h4>💼 Wallet Verification</h4>
+              <h4><IoWalletSharp /> Wallet Verification</h4>
               <p>We verify you control your cryptocurrency wallet, not your personal identity. Your first withdrawal must go to your original deposit address—preventing account hijacking while maintaining privacy.</p>
             </div>
 
             <div className="security-item">
-              <h4>📊 Behavioral Analysis</h4>
+              <h4><IoPulseSharp /> Behavioral Analysis</h4>
               <p>Our systems detect suspicious patterns (bot behavior, rapid deposit/loss cycles) without collecting personal information. We flag wallets, not identities.</p>
             </div>
 
             <div className="security-item">
-              <h4>✅ Provably Fair Gaming</h4>
+              <h4><IoCheckmarkCircleSharp /> Provably Fair Gaming</h4>
               <p>Every game result can be verified cryptographically. You don't need to trust us—you can mathematically confirm fairness using blockchain data.</p>
             </div>
           </div>
@@ -80,17 +90,17 @@ const ContentSection = () => {
           
           <div className="info-cards">
             <div className="info-card-item">
-              <h4>⚠️ Legal Considerations</h4>
+              <h4><IoAlertCircleSharp /> Legal Considerations</h4>
               <p>UAE maintains strict gambling regulations. While we operate internationally and don't collect personal information, you're responsible for understanding local laws. Many players use VPN for privacy—we support this practice.</p>
             </div>
 
             <div className="info-card-item">
-              <h4>💰 Tax Obligations</h4>
+              <h4><IoCashSharp /> Tax Obligations</h4>
               <p>Anonymity doesn't eliminate tax responsibilities. Cryptocurrency gambling winnings may be taxable in your jurisdiction. We don't report to tax authorities (we don't collect identifying information), but you should consult tax professionals about your obligations.</p>
             </div>
 
             <div className="info-card-item">
-              <h4>🛡️ VPN Recommended</h4>
+              <h4><IoShieldCheckmarkSharp /> VPN Recommended</h4>
               <p>Most UAE players access us through a VPN. We're completely VPN-friendly and don't restrict based on IP addresses. Your privacy matters to us.</p>
             </div>
           </div>
@@ -152,32 +162,32 @@ const ContentSection = () => {
           
           <div className="games-list">
             <div className="game-type">
-              <h4>🎰 Slots</h4>
+              <h4><IoGameControllerSharp /> Slots</h4>
               <p>Hundreds of titles from top providers, including provably fair options you can verify cryptographically.</p>
             </div>
 
             <div className="game-type">
-              <h4>🎥 Live Casino</h4>
+              <h4><IoTvSharp /> Live Casino</h4>
               <p>Real dealers streaming in HD. Play roulette, blackjack, and baccarat with cryptocurrency bets.</p>
             </div>
 
             <div className="game-type">
-              <h4>🃏 Table Games</h4>
+              <h4><IoCardSharp /> Table Games</h4>
               <p>Classic casino games including poker variants, baccarat, and more.</p>
             </div>
 
             <div className="game-type">
-              <h4>🚀 Crash Games</h4>
+              <h4><IoRocketSharp /> Crash Games</h4>
               <p>Fast-paced multiplayer games like Aviator. Watch the multiplier climb and cash out before it crashes.</p>
             </div>
 
             <div className="game-type">
-              <h4>🎲 Dice & Originals</h4>
+              <h4><IoDiceSharp /> Dice & Originals</h4>
               <p>Provably fair games where you can verify every result using blockchain data.</p>
             </div>
 
             <div className="game-type">
-              <h4>⚽ Sports Betting</h4>
+              <h4><IoFootballSharp /> Sports Betting</h4>
               <p>Bet on global sports events with cryptocurrency. Fast settlements, anonymous wagering.</p>
             </div>
           </div>
@@ -190,27 +200,27 @@ const ContentSection = () => {
           
           <div className="bonus-list">
             <div className="bonus-item">
-              <h4>🎁 Welcome Bonus</h4>
+              <h4><IoGiftSharp /> Welcome Bonus</h4>
               <p>Enhanced match on your first deposit. Better rates than traditional casinos because we save on compliance costs.</p>
             </div>
 
             <div className="bonus-item">
-              <h4>🔄 Reload Bonuses</h4>
+              <h4><IoReloadSharp /> Reload Bonuses</h4>
               <p>Regular deposit bonuses for returning players. Weekly and monthly offers.</p>
             </div>
 
             <div className="bonus-item">
-              <h4>💵 Rakeback Program</h4>
+              <h4><IoCashSharp /> Rakeback Program</h4>
               <p>Get a percentage of your total wagering returned as cryptocurrency. No complicated tier systems—straightforward cashback.</p>
             </div>
 
             <div className="bonus-item">
-              <h4>👑 VIP Program</h4>
+              <h4><IoDiamondSharp /> VIP Program</h4>
               <p>Exclusive perks for high-volume players. Enhanced rakeback, priority withdrawals, personal account management—all while maintaining complete anonymity.</p>
             </div>
 
             <div className="bonus-item">
-              <h4>🏆 Tournaments</h4>
+              <h4><IoTrophySharp /> Tournaments</h4>
               <p>Compete anonymously using your wallet address. Prize pools paid directly to winners' wallets.</p>
             </div>
           </div>
@@ -261,32 +271,32 @@ const ContentSection = () => {
           
           <div className="practices-grid">
             <div className="practice-item">
-              <h4>🔐 Use Strong Passwords</h4>
+              <h4><IoKeySharp /> Use Strong Passwords</h4>
               <p>Create unique passwords for your casino account. Never reuse passwords from other sites.</p>
             </div>
 
             <div className="practice-item">
-              <h4>📱 Enable Two-Factor Authentication</h4>
+              <h4><IoPhonePortraitSharp /> Enable Two-Factor Authentication</h4>
               <p>Add an extra security layer even for anonymous accounts. Protects against unauthorized access.</p>
             </div>
 
             <div className="practice-item">
-              <h4>💼 Secure Your Wallet</h4>
+              <h4><IoBriefcaseSharp /> Secure Your Wallet</h4>
               <p>Keep significant cryptocurrency in hardware wallets (Ledger, Trezor) rather than leaving large amounts in a casino balance.</p>
             </div>
 
             <div className="practice-item">
-              <h4>✔️ Check Withdrawal Addresses</h4>
+              <h4><IoCheckmarkSharp /> Check Withdrawal Addresses</h4>
               <p>Always verify destination wallet addresses before confirming withdrawals. Cryptocurrency transactions are irreversible.</p>
             </div>
 
             <div className="practice-item">
-              <h4>🌐 Use VPN</h4>
+              <h4><IoGlobeSharp /> Use VPN</h4>
               <p>Access our platform through VPN consistently, especially from restricted jurisdictions.</p>
             </div>
 
             <div className="practice-item">
-              <h4>🚫 Never Share Private Keys</h4>
+              <h4><IoCloseCircleSharp /> Never Share Private Keys</h4>
               <p>We'll never ask for your wallet private keys. Anyone requesting them is attempting fraud.</p>
             </div>
           </div>
@@ -345,43 +355,43 @@ const ContentSection = () => {
           
           <div className="reasons-grid">
             <div className="reason-item">
-              <span className="reason-icon">🔒</span>
+              <span className="reason-icon"><IoLockClosedSharp /></span>
               <h4>True Anonymity</h4>
               <p>We never collect identity documents. Your wallet address is sufficient.</p>
             </div>
 
             <div className="reason-item">
-              <span className="reason-icon">⚡</span>
+              <span className="reason-icon"><IoFlashSharp /></span>
               <h4>Fast Transactions</h4>
               <p>Deposits confirm within minutes. Withdrawals process within 15-30 minutes.</p>
             </div>
 
             <div className="reason-item">
-              <span className="reason-icon">🎮</span>
+              <span className="reason-icon"><IoGameControllerSharp /></span>
               <h4>Complete Game Library</h4>
               <p>Slots, live casino, sports betting, and provably fair originals.</p>
             </div>
 
             <div className="reason-item">
-              <span className="reason-icon">🌍</span>
+              <span className="reason-icon"><IoGlobeSharp /></span>
               <h4>VPN Friendly</h4>
               <p>Access from anywhere. We don't restrict based on location.</p>
             </div>
 
             <div className="reason-item">
-              <span className="reason-icon">₿</span>
+              <span className="reason-icon"><FaBitcoin /></span>
               <h4>Cryptocurrency Focused</h4>
               <p>Built specifically for crypto players. We understand blockchain technology and privacy needs.</p>
             </div>
 
             <div className="reason-item">
-              <span className="reason-icon">✅</span>
+              <span className="reason-icon"><IoCheckmarkCircleSharp /></span>
               <h4>Transparent & Fair</h4>
               <p>Provably fair games you can verify yourself. Blockchain transparency without identity disclosure.</p>
             </div>
 
             <div className="reason-item">
-              <span className="reason-icon">🛡️</span>
+              <span className="reason-icon"><IoShieldCheckmarkSharp /></span>
               <h4>No Hidden Requirements</h4>
               <p>What you see is what you get. No surprise verification requests when you win.</p>
             </div>
