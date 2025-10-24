@@ -9,7 +9,7 @@ import {
 import './Sidebar.css'
 
 const menuItems = [
-  { id: 'boo-bonus', label: 'BOO BONUS', icon: IoGiftSharp, highlight: true },
+  { id: 'bonus', label: 'BONUS', icon: IoGiftSharp, highlight: true },
   { id: 'promotions', label: 'PROMOTIONS', icon: IoRibbonSharp },
   { id: 'home', label: 'HOME', icon: IoHomeSharp, active: true },
   { id: 'casino', label: 'CASINO', icon: IoDiamondSharp },
