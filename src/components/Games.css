@@ -1,0 +1,249 @@
+.games-section {
+  padding: 4rem 0;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.see-all-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+
+.see-all-link:hover {
+  color: var(--primary-purple);
+}
+
+.see-all-link svg {
+  transition: transform 0.3s ease;
+}
+
+.see-all-link:hover svg {
+  transform: translateX(4px);
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+
+.game-card {
+  position: relative;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+}
+
+.game-rank {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 32px;
+  height: 32px;
+  background: rgba(0, 0, 0, 0.8);
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--primary-yellow);
+  z-index: 2;
+}
+
+.game-image {
+  position: relative;
+  aspect-ratio: 3/4;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--dark-card);
+}
+
+.game-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(139, 92, 246, 0.1) 0%, rgba(99, 102, 241, 0.1) 100%);
+}
+
+.game-icon {
+  font-size: 48px;
+  opacity: 0.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-purple);
+}
+
+.game-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  z-index: 2;
+}
+
+.badge-new {
+  background: var(--primary-yellow);
+  color: #0a0a0a;
+}
+
+.badge-promo {
+  background: var(--primary-purple);
+  color: white;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 1rem;
+}
+
+.game-card:hover .game-overlay {
+  opacity: 1;
+}
+
+.game-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.game-btn-play {
+  background: var(--accent-gradient);
+  color: white;
+}
+
+.game-btn-play:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(139, 92, 246, 0.4);
+}
+
+.game-btn-demo {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.game-btn-demo:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.game-info {
+  padding: 1rem 0.5rem;
+}
+
+.game-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-primary);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.more-games-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 3/4;
+  border-radius: 16px;
+  background: rgba(26, 26, 26, 0.5);
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.more-games-card:hover {
+  border-color: var(--primary-purple);
+  background: rgba(139, 92, 246, 0.1);
+  transform: translateY(-5px);
+}
+
+.more-games-icon {
+  font-size: 48px;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.more-games-text {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.more-games-card:hover .more-games-icon,
+.more-games-card:hover .more-games-text {
+  color: var(--primary-purple);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .games-section {
+    padding: 3rem 0;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+
+  .games-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 1rem;
+  }
+
+  .game-icon {
+    font-size: 36px;
+  }
+
+  .more-games-icon {
+    font-size: 36px;
+  }
+
+  .more-games-text {
+    font-size: 14px;
+  }
+}
+
+

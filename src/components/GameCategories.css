@@ -1,0 +1,117 @@
+.game-categories {
+  padding: 3rem 0;
+  background: rgba(26, 26, 26, 0.3);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.search-bar {
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.search-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 12px 24px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  color: var(--text-secondary);
+  font-size: 16px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.search-btn:hover {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--primary-purple);
+  color: var(--text-primary);
+}
+
+.categories-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary-purple) transparent;
+}
+
+.categories-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.categories-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.categories-scroll::-webkit-scrollbar-thumb {
+  background: var(--primary-purple);
+  border-radius: 3px;
+}
+
+.categories-list {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 1rem;
+  min-width: min-content;
+}
+
+.category-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 12px 20px;
+  background: rgba(26, 26, 26, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.category-item:hover {
+  background: rgba(139, 92, 246, 0.1);
+  border-color: var(--primary-purple);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+}
+
+.category-icon-wrapper {
+  font-size: 20px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary-purple);
+}
+
+.category-name {
+  font-size: 14px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .game-categories {
+    padding: 2rem 0;
+  }
+
+  .categories-list {
+    gap: 0.75rem;
+  }
+
+  .category-item {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+
+  .category-icon {
+    font-size: 16px;
+  }
+}
+
+
