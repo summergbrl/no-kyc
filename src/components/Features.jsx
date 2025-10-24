@@ -36,6 +36,37 @@ const Features = () => {
 
   return (
     <section className="features-section">
+      {/* Animated Crypto Background */}
+      <div className="crypto-background">
+        {[...Array(8)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="floating-crypto"
+            style={{
+              left: `${10 + i * 12}%`,
+              top: `${15 + (i % 4) * 25}%`,
+            }}
+            animate={{
+              y: [0, -40, 0],
+              rotate: [0, 360],
+              opacity: [0.2, 0.4, 0.2],
+            }}
+            transition={{
+              duration: 4 + i * 0.5,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: i * 0.3,
+            }}
+          >
+            {i % 5 === 0 && <FaBitcoin />}
+            {i % 5 === 1 && <FaEthereum />}
+            {i % 5 === 2 && '💲'}
+            {i % 5 === 3 && 'Ł'}
+            {i % 5 === 4 && 'ɱ'}
+          </motion.div>
+        ))}
+      </div>
+
       <div className="container">
         
         {/* Main Feature Cards */}
