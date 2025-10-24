@@ -4,96 +4,245 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--dark-bg);
+  background: radial-gradient(ellipse at center, #1a2332 0%, var(--dark-bg) 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 9999;
-  animation: fadeOut 0.5s ease-out 2s forwards;
+  overflow: hidden;
 }
 
-@keyframes fadeOut {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
+/* Animated Background */
+.loading-background {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
+.floating-element {
+  position: absolute;
+  color: var(--primary-purple);
+  opacity: 0.3;
+  filter: blur(1px);
+}
+
+/* Content */
 .loading-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 2.5rem;
+  z-index: 1;
 }
 
+/* Logo */
 .loading-logo {
   display: flex;
   align-items: center;
-  gap: 16px;
-  animation: fadeIn 0.6s ease-out;
+  gap: 20px;
 }
 
 .logo-icon-large {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
   background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
-  border-radius: 16px;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 32px;
+  font-size: 40px;
   font-weight: 700;
   color: white;
   box-shadow: 0 8px 32px rgba(139, 92, 246, 0.4);
-  animation: pulse 2s ease-in-out infinite;
 }
 
 .logo-text-large {
   display: flex;
   flex-direction: column;
-  line-height: 1.2;
+  line-height: 1.1;
 }
 
 .kyc-text-large {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
   color: var(--text-primary);
-  letter-spacing: 2px;
+  letter-spacing: 3px;
 }
 
 .casino-text-large {
-  font-size: 36px;
+  font-size: 42px;
   font-weight: 700;
   color: var(--text-secondary);
 }
 
+/* Loading Text */
+.loading-text {
+  text-align: center;
+}
+
+.loading-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 0.5rem;
+}
+
+.loading-text p {
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+/* Spinner Rings */
 .loading-spinner {
+  position: relative;
+  width: 120px;
+  height: 120px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.spinner {
-  width: 50px;
-  height: 50px;
-  border: 4px solid rgba(139, 92, 246, 0.1);
-  border-top-color: var(--primary-purple);
+.spinner-ring {
+  position: absolute;
   border-radius: 50%;
-  animation: spin 1s linear infinite;
+  border: 3px solid transparent;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
+.spinner-ring-1 {
+  width: 120px;
+  height: 120px;
+  border-top-color: var(--primary-purple);
+  border-right-color: var(--primary-purple);
+}
+
+.spinner-ring-2 {
+  width: 90px;
+  height: 90px;
+  border-top-color: var(--primary-yellow);
+  border-left-color: var(--primary-yellow);
+}
+
+.spinner-ring-3 {
+  width: 60px;
+  height: 60px;
+  border-top-color: var(--primary-blue);
+  border-bottom-color: var(--primary-blue);
+}
+
+/* Progress Bar */
+.progress-container {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.progress-bar {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, var(--primary-purple) 0%, var(--primary-blue) 50%, var(--primary-yellow) 100%);
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.progress-fill::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, 
+    transparent 0%, 
+    rgba(255, 255, 255, 0.3) 50%, 
+    transparent 100%
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
   }
 }
 
-@keyframes pulse {
-  0%, 100% {
-    transform: scale(1);
+.progress-glow {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, rgba(139, 92, 246, 0.8) 0%, transparent 70%);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.progress-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 1px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .logo-icon-large {
+    width: 70px;
+    height: 70px;
+    font-size: 28px;
+    border-radius: 14px;
   }
-  50% {
-    transform: scale(1.05);
+
+  .kyc-text-large,
+  .casino-text-large {
+    font-size: 32px;
+  }
+
+  .loading-text h3 {
+    font-size: 18px;
+  }
+
+  .loading-spinner {
+    width: 100px;
+    height: 100px;
+  }
+
+  .spinner-ring-1 {
+    width: 100px;
+    height: 100px;
+  }
+
+  .spinner-ring-2 {
+    width: 75px;
+    height: 75px;
+  }
+
+  .spinner-ring-3 {
+    width: 50px;
+    height: 50px;
+  }
+
+  .progress-container {
+    width: 250px;
+  }
+
+  .floating-element {
+    font-size: 20px;
   }
 }
 
