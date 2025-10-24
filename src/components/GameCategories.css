@@ -1,8 +1,7 @@
 .game-categories {
-  padding: 3rem 0;
-  background: rgba(26, 26, 26, 0.3);
-  border-top: 1px solid rgba(255, 255, 255, 0.05);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 2rem 0;
+  background: var(--dark-bg);
+  border-bottom: 1px solid var(--border-color);
 }
 
 .search-bar {
@@ -14,21 +13,23 @@
 .search-btn {
   display: flex;
   align-items: center;
-  gap: 0.5rem;
-  padding: 12px 24px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
+  gap: 0.75rem;
+  padding: 12px 28px;
+  background: var(--dark-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
   color: var(--text-secondary);
-  font-size: 16px;
+  font-size: 15px;
+  font-weight: 600;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .search-btn:hover {
-  background: rgba(255, 255, 255, 0.08);
-  border-color: var(--primary-purple);
+  background: var(--dark-hover);
+  border-color: var(--primary-blue);
   color: var(--text-primary);
+  box-shadow: 0 4px 16px rgba(59, 130, 246, 0.2);
 }
 
 .categories-scroll {
@@ -62,23 +63,32 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  padding: 12px 20px;
-  background: rgba(26, 26, 26, 0.8);
-  border: 1px solid rgba(255, 255, 255, 0.05);
-  border-radius: 12px;
-  color: var(--text-primary);
-  font-size: 14px;
-  font-weight: 500;
+  padding: 10px 24px;
+  background: var(--dark-card);
+  border: 1px solid var(--border-color);
+  border-radius: 24px;
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
   white-space: nowrap;
   transition: all 0.3s ease;
   cursor: pointer;
 }
 
 .category-item:hover {
-  background: rgba(139, 92, 246, 0.1);
-  border-color: var(--primary-purple);
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: var(--text-primary);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(139, 92, 246, 0.2);
+  box-shadow: 0 8px 20px rgba(59, 130, 246, 0.3);
+}
+
+.category-item.active {
+  background: var(--primary-blue);
+  border-color: var(--primary-blue);
+  color: var(--text-primary);
 }
 
 .category-icon-wrapper {

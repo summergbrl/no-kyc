@@ -7,13 +7,17 @@
 :root {
   --primary-purple: #8b5cf6;
   --primary-yellow: #fbbf24;
-  --dark-bg: #0a0a0a;
-  --dark-card: #1a1a1a;
-  --dark-hover: #2a2a2a;
+  --primary-blue: #3b82f6;
+  --dark-bg: #0f1923;
+  --dark-sidebar: #0a1117;
+  --dark-card: #1a2332;
+  --dark-hover: #253449;
   --text-primary: #ffffff;
-  --text-secondary: #a0a0a0;
+  --text-secondary: #94a3b8;
+  --border-color: #1e293b;
   --accent-gradient: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
   --yellow-gradient: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+  --blue-gradient: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
 }
 
 body {
