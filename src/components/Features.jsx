@@ -36,35 +36,20 @@ const Features = () => {
 
   return (
     <section className="features-section">
-      {/* Animated Crypto Background */}
+      {/* Animated Crypto Background - Pure CSS for performance */}
       <div className="crypto-background">
-        {[...Array(8)].map((_, i) => (
-          <motion.div
-            key={i}
-            className="floating-crypto"
-            style={{
-              left: `${10 + i * 12}%`,
-              top: `${15 + (i % 4) * 25}%`,
-            }}
-            animate={{
-              y: [0, -40, 0],
-              rotate: [0, 360],
-              opacity: [0.2, 0.4, 0.2],
-            }}
-            transition={{
-              duration: 4 + i * 0.5,
-              repeat: Infinity,
-              ease: "easeInOut",
-              delay: i * 0.3,
-            }}
-          >
-            {i % 5 === 0 && <FaBitcoin />}
-            {i % 5 === 1 && <FaEthereum />}
-            {i % 5 === 2 && '💲'}
-            {i % 5 === 3 && 'Ł'}
-            {i % 5 === 4 && 'ɱ'}
-          </motion.div>
-        ))}
+        <div className="floating-crypto" style={{ left: '10%', top: '20%', animationDelay: '0s' }}>
+          <FaBitcoin />
+        </div>
+        <div className="floating-crypto" style={{ left: '25%', top: '60%', animationDelay: '1s' }}>
+          <FaEthereum />
+        </div>
+        <div className="floating-crypto" style={{ left: '75%', top: '30%', animationDelay: '2s' }}>
+          💲
+        </div>
+        <div className="floating-crypto" style={{ left: '85%', top: '70%', animationDelay: '3s' }}>
+          Ł
+        </div>
       </div>
 
       <div className="container">
@@ -77,7 +62,7 @@ const Features = () => {
           whileInView="visible"
           viewport={{ once: true, margin: "-50px" }}
         >
-          <motion.div className="feature-card" variants={cardVariant} whileHover={{ y: -5 }}>
+          <motion.div className="feature-card" variants={cardVariant}>
             <div className="feature-icon purple">
               <IoLockClosedSharp size={32} />
             </div>
@@ -85,7 +70,7 @@ const Features = () => {
             <p>No KYC verification required. Your wallet address is your identity. Play with complete privacy.</p>
           </motion.div>
 
-          <motion.div className="feature-card" variants={cardVariant} whileHover={{ y: -5 }}>
+          <motion.div className="feature-card" variants={cardVariant}>
             <div className="feature-icon yellow">
               <IoFlashSharp size={32} />
             </div>
@@ -93,7 +78,7 @@ const Features = () => {
             <p>Register in 30 seconds with just an email. Start playing immediately without verification delays.</p>
           </motion.div>
 
-          <motion.div className="feature-card" variants={cardVariant} whileHover={{ y: -5 }}>
+          <motion.div className="feature-card" variants={cardVariant}>
             <div className="feature-icon blue">
               <IoCashSharp size={32} />
             </div>
@@ -101,7 +86,7 @@ const Features = () => {
             <p>Process withdrawals in 15-30 minutes. No manual reviews or document requests.</p>
           </motion.div>
 
-          <motion.div className="feature-card" variants={cardVariant} whileHover={{ y: -5 }}>
+          <motion.div className="feature-card" variants={cardVariant}>
             <div className="feature-icon green">
               <IoGlobeSharp size={32} />
             </div>
