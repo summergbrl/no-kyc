@@ -8,6 +8,7 @@ import GameCategories from './components/GameCategories'
 import TopGames from './components/TopGames'
 import NewGames from './components/NewGames'
 import Features from './components/Features'
+import ContentSection from './components/ContentSection'
 import Footer from './components/Footer'
 import './App.css'
 
@@ -35,6 +36,7 @@ function App() {
         <TopGames />
         <NewGames />
         <Features />
+        <ContentSection />
         <Footer />
       </main>
     </div>
