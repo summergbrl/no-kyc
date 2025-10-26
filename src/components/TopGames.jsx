@@ -4,13 +4,13 @@ import './Games.css'
 
 const topGames = [
   { id: 1, name: 'Gates of Olympus', badge: 'Drops & Wins', rank: 1, image: 'https://fruityslots.com/wp-content/uploads/2023/10/Gates-of-Olympus-1000-Slot-jpg.webp' },
-  { id: 2, name: 'Sweet Bonanza', badge: 'new', rank: 2, image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_SweetBonanza.jpg' },
-  { id: 3, name: 'Book of Dead', rank: 3, image: 'https://www.dkgames.dk/media/b2gq2h5i/book-of-dead-logo.png' },
-  { id: 4, name: 'Starburst', rank: 4, image: 'https://www.playojo.com/wp-content/uploads/2024/09/Starburst-2-NetEnt.jpg' },
-  { id: 5, name: 'Aviator', rank: 5, image: 'https://www.casinodaddy.com/uploads/slot_images/aviator_slot.jpg' },
-  { id: 6, name: 'Wolf Gold', badge: 'new', rank: 6, image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_WolfGold.jpg' },
-  { id: 7, name: 'Big Bass Bonanza', rank: 7, image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_BigBassBonanza.jpg' },
-  { id: 8, name: 'Reactoonz', rank: 8, image: 'https://www.dkgames.dk/media/4jpb2i5z/reactoonz-logo.png' }
+  { id: 2, name: 'Sweet Bonanza', badge: 'new', rank: 2, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSu7tGGIJ8iiKAWKUF9uIlpZYB01-rbovAwA&s' },
+  { id: 3, name: 'Book of Dead', rank: 3, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9fVXLp4y6T_RKxVHQb8YzB1Aw5xPB7jqNpg&s' },
+  { id: 4, name: 'Starburst', rank: 4, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdC3qG4UyfDhKwJ_aVWwE5W5gU0kQXPYm-Gg&s' },
+  { id: 5, name: 'Aviator', rank: 5, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6QmCZqK7VvKhYW5HL7LfBxCnXN8qKYNhbQ&s' },
+  { id: 6, name: 'Wolf Gold', badge: 'new', rank: 6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMKw5LN8Z-iBb7_3qJvlG9Y5xQHHxQvGHXQ&s' },
+  { id: 7, name: 'Big Bass Bonanza', rank: 7, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPvLwX7mC5YbxW9xQJ8kFHp5gYdKLMxYPKw&s' },
+  { id: 8, name: 'Reactoonz', rank: 8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5qX7LVnHJw0NQB8YzX5L7j9K6pM8kW9wQXg&s' }
 ]
 
 const TopGames = () => {

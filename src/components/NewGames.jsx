@@ -3,14 +3,14 @@ import { IoSparkles } from 'react-icons/io5'
 import './Games.css'
 
 const newGames = [
-  { id: 1, name: 'Sugar Rush', badge: 'new', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_SugarRush.jpg' },
-  { id: 2, name: 'Starlight Princess', badge: 'new', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_StarlightPrincess.jpg' },
-  { id: 3, name: 'Wild West Gold', badge: 'new', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_WildWestGold.jpg' },
-  { id: 4, name: 'Great Rhino Megaways', badge: 'new', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_GreatRhinoMegaways.jpg' },
-  { id: 5, name: 'The Dog House', badge: 'new', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_TheDogHouse.jpg' },
-  { id: 6, name: 'Fruit Party', badge: 'new', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_FruitParty.jpg' },
-  { id: 7, name: 'Aztec Gems', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_AztecGems.jpg' },
-  { id: 8, name: 'John Hunter', image: 'https://static.casinolabbet.com/images/games/400x300/pragmaticexternal_JohnHunterTombScarabQueen.jpg' }
+  { id: 1, name: 'Sugar Rush', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz5VtLg8nXPzMxVqYbKw7J5L9hRQNcYm8XHw&s' },
+  { id: 2, name: 'Starlight Princess', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7YQNcLxPz8MYwQ5vXJ7K9L5hNQRcZm6XKHg&s' },
+  { id: 3, name: 'Wild West Gold', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNqW8LgXnYPzKxVqZbJw5L7M9hRQOcYn7XKw&s' },
+  { id: 4, name: 'Great Rhino Megaways', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMpX7LhYoZQzNyWqYcKx6M8N0iSRPdZo8YLx&s' },
+  { id: 5, name: 'The Dog House', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY8Xp9MhZrRzOzXq7dLx8N9O1jTSQe7p9ZMy&s' },
+  { id: 6, name: 'Fruit Party', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YQq0NiasS0PaYr8eMy9O0P2kUTRf8q0aNz&s' },
+  { id: 7, name: 'Aztec Gems', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9Rr1OjbtT1QbZs9fNz0P1Q3lVUSg9r1bO0&s' },
+  { id: 8, name: 'John Hunter', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB0Ss2PkctU2RcZt0gO01Q2R4mWVTh0s2cP1&s' }
 ]
 
 const NewGames = () => {
