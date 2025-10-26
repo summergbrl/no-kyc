@@ -1,12 +1,28 @@
 import React from 'react'
 import { motion } from 'framer-motion'
-import { IoSearchSharp } from 'react-icons/io5'
+import { IoSearchSharp, IoMenuSharp } from 'react-icons/io5'
 import './TopBar.css'
 
-const TopBar = () => {
+const TopBar = ({ onMenuClick }) => {
   return (
     <div className="topbar">
       <div className="topbar-content">
+        {/* Hamburger Menu for Mobile */}
+        <motion.button 
+          className="menu-button"
+          onClick={onMenuClick}
+          whileTap={{ scale: 0.95 }}
+          aria-label="Toggle menu"
+        >
+          <IoMenuSharp />
+        </motion.button>
+
+        {/* Logo for Mobile */}
+        <div className="topbar-logo-mobile">
+          <img src="/logo.png" alt="No-KYC Casino" className="logo-mobile-img" />
+          <span>KYC</span>
+        </div>
+
         {/* Search */}
         <div className="topbar-search">
           <IoSearchSharp className="search-icon" />

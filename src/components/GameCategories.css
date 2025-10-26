@@ -107,20 +107,49 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .game-categories {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+  }
+  
+  .search-bar {
+    margin-bottom: 1.5rem;
+  }
+  
+  .search-btn {
+    padding: 10px 24px;
+    font-size: 14px;
   }
 
   .categories-list {
     gap: 0.75rem;
+    padding-bottom: 0.75rem;
   }
 
   .category-item {
     padding: 10px 16px;
-    font-size: 13px;
+    font-size: 12px;
   }
 
-  .category-icon {
-    font-size: 16px;
+  .category-icon-wrapper {
+    font-size: 18px;
+  }
+  
+  .category-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-categories {
+    padding: 1rem 0;
+  }
+  
+  .search-btn {
+    padding: 8px 20px;
+    font-size: 13px;
+  }
+  
+  .category-item {
+    padding: 8px 14px;
   }
 }
 

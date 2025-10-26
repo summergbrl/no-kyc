@@ -14,6 +14,7 @@ import './App.css'
 
 function App() {
   const [loading, setLoading] = useState(true)
+  const [sidebarOpen, setSidebarOpen] = useState(false)
 
   useEffect(() => {
     // Hide loading screen after 2.5 seconds
@@ -24,11 +25,20 @@ function App() {
     return () => clearTimeout(timer)
   }, [])
 
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen)
+  }
+
+  const closeSidebar = () => {
+    setSidebarOpen(false)
+  }
+
   return (
     <div className="App">
       {loading && <LoadingScreen />}
-      <Sidebar />
-      <TopBar />
+      <Sidebar isOpen={sidebarOpen} onClose={closeSidebar} />
+      <TopBar onMenuClick={toggleSidebar} />
+      {sidebarOpen && <div className="sidebar-overlay" onClick={closeSidebar} />}
       <main className="main-content">
         <Hero />
         <BonusSlider />

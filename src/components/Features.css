@@ -338,10 +338,35 @@
   .features-grid {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .feature-card {
+    padding: 2rem 1.5rem;
+  }
+  
+  .feature-icon {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 1.25rem;
+  }
+  
+  .feature-card h3 {
+    font-size: 18px;
+  }
+  
+  .feature-card p {
+    font-size: 13px;
+  }
+
+  .how-it-works {
+    padding: 2rem 0;
+    margin-bottom: 2rem;
   }
 
   .how-it-works h2 {
-    font-size: 24px;
+    font-size: 22px;
+    margin-bottom: 2rem;
   }
 
   .steps-row {
@@ -350,14 +375,102 @@
 
   .step-arrow {
     transform: rotate(90deg);
+    margin: 0.5rem 0;
+  }
+  
+  .step-item {
+    max-width: 100%;
+    padding: 1.5rem 1rem;
+  }
+  
+  .step-number {
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
 
   .info-row {
     grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .info-box {
+    padding: 2rem;
+  }
+  
+  .info-box h3 {
+    font-size: 16px;
+    margin-bottom: 1.25rem;
+  }
+  
+  .info-box li {
+    font-size: 13px;
+  }
+  
+  .crypto-badge {
+    padding: 0.5rem 1rem;
+    font-size: 13px;
+  }
+
+  .features-cta {
+    padding: 3rem 2rem;
   }
 
   .features-cta h2 {
-    font-size: 24px;
+    font-size: 22px;
+  }
+  
+  .features-cta p {
+    font-size: 16px;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features-section {
+    padding: 1.5rem 0;
+  }
+  
+  .feature-card {
+    padding: 1.5rem 1rem;
+  }
+  
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .how-it-works h2 {
+    font-size: 20px;
+  }
+  
+  .step-item {
+    padding: 1.25rem 1rem;
+  }
+  
+  .step-item h4 {
+    font-size: 15px;
+  }
+  
+  .step-item p {
+    font-size: 12px;
+  }
+  
+  .info-box {
+    padding: 1.5rem;
+  }
+  
+  .features-cta {
+    padding: 2rem 1.5rem;
+  }
+  
+  .features-cta h2 {
+    font-size: 20px;
+  }
+  
+  .features-cta p {
+    font-size: 14px;
   }
 }
 

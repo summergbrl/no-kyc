@@ -7,6 +7,7 @@ const Hero = () => {
   return (
     <section className="hero">
       <div className="hero-background">
+        <div className="hero-pattern"></div>
         <div className="hero-gradient"></div>
         <div className="hero-shapes">
           <motion.div 

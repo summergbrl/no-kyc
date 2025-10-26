@@ -10,6 +10,18 @@
   min-height: calc(100vh - 70px);
 }
 
+/* Sidebar Overlay for Mobile */
+.sidebar-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+  display: none;
+}
+
 /* Mobile Responsive */
 @media (max-width: 1024px) {
   .main-content {
@@ -20,6 +32,10 @@
 @media (max-width: 768px) {
   .main-content {
     margin-left: 0;
+  }
+  
+  .sidebar-overlay {
+    display: block;
   }
 }
 

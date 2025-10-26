@@ -26,12 +26,20 @@ const menuItems = [
   { id: 'vip', label: 'VIP LEVELS', icon: IoDiamondSharp }
 ]
 
-const Sidebar = () => {
+const Sidebar = ({ isOpen, onClose }) => {
   const [activeItem, setActiveItem] = useState('home')
+
+  const handleItemClick = (id) => {
+    setActiveItem(id)
+    // Close sidebar on mobile when item is clicked
+    if (window.innerWidth <= 768) {
+      onClose()
+    }
+  }
 
   return (
     <motion.aside 
-      className="sidebar"
+      className={`sidebar ${isOpen ? 'mobile-open' : ''}`}
       initial={{ x: -300 }}
       animate={{ x: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
@@ -42,9 +50,7 @@ const Sidebar = () => {
           className="sidebar-logo"
           whileHover={{ scale: 1.05 }}
         >
-          <div className="logo-icon">
-            <span>no</span>
-          </div>
+          <img src="/logo.png" alt="No-KYC Casino" className="logo-image" />
           <div className="logo-text">
             <span className="kyc-text">KYC</span>
             <span className="casino-text">Casino</span>
@@ -58,7 +64,7 @@ const Sidebar = () => {
               key={item.id}
               href={`#${item.id}`}
               className={`sidebar-item ${activeItem === item.id ? 'active' : ''} ${item.highlight ? 'highlight' : ''}`}
-              onClick={() => setActiveItem(item.id)}
+              onClick={() => handleItemClick(item.id)}
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.3, delay: index * 0.03 }}
