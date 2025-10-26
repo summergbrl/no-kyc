@@ -38,11 +38,8 @@ const Sidebar = ({ isOpen, onClose }) => {
   }
 
   return (
-    <motion.aside 
+    <aside 
       className={`sidebar ${isOpen ? 'mobile-open' : ''}`}
-      initial={{ x: -300 }}
-      animate={{ x: 0 }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
     >
       <div className="sidebar-content">
         {/* Logo */}
@@ -92,7 +89,7 @@ const Sidebar = ({ isOpen, onClose }) => {
           <a href="#help" className="help-link">HELP CENTRE</a>
         </div>
       </div>
-    </motion.aside>
+    </aside>
   )
 }
 
