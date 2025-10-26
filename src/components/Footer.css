@@ -236,45 +236,164 @@
 
 @media (max-width: 768px) {
   .footer {
-    padding: 2rem 0 1.5rem;
+    padding: 1.5rem 0 1rem;
   }
 
   .footer-seo {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
+    margin-bottom: 2rem;
   }
 
   .seo-title {
-    font-size: 20px;
+    font-size: 16px;
+    margin-bottom: 0.75rem;
   }
 
   .seo-description {
-    font-size: 14px;
+    font-size: 12px;
+    margin-bottom: 1.5rem;
   }
 
   .seo-features {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .seo-feature h3 {
+    font-size: 14px;
+    margin-bottom: 0.35rem;
+  }
+  
+  .seo-feature p {
+    font-size: 12px;
+  }
+  
+  .seo-crypto {
+    padding: 1rem;
+  }
+  
+  .seo-crypto h3 {
+    font-size: 13px;
+  }
+  
+  .seo-crypto p {
+    font-size: 11px;
   }
 
   .footer-content {
     grid-template-columns: 1fr;
-    gap: 2rem;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .footer-section:first-child {
     grid-column: 1;
   }
+  
+  .footer-logo {
+    margin-bottom: 1rem;
+  }
+  
+  .footer-logo .logo-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+  
+  .footer-logo .kyc-text,
+  .footer-logo .casino-text {
+    font-size: 18px;
+  }
 
   .footer-description {
     max-width: 100%;
+    font-size: 12px;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    gap: 0.75rem;
+  }
+  
+  .social-link {
+    width: 36px;
+    height: 36px;
+    font-size: 16px;
+  }
+  
+  .footer-title {
+    font-size: 15px;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-links {
+    gap: 0.5rem;
+  }
+  
+  .footer-links a {
+    font-size: 12px;
   }
 
   .payment-methods {
-    gap: 1rem;
+    gap: 0.75rem;
   }
 
   .payment-icon {
-    font-size: 24px;
+    font-size: 20px;
+  }
+  
+  .copyright {
+    font-size: 12px;
+  }
+  
+  .footer-notice {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding: 1rem 0 0.75rem;
+  }
+  
+  .footer-seo {
+    padding: 1rem 0;
+  }
+  
+  .seo-title {
+    font-size: 14px;
+  }
+  
+  .seo-description {
+    font-size: 11px;
+  }
+  
+  .seo-feature h3 {
+    font-size: 13px;
+  }
+  
+  .seo-feature p {
+    font-size: 11px;
+  }
+  
+  .footer-logo .logo-icon {
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
+  }
+  
+  .footer-logo .kyc-text,
+  .footer-logo .casino-text {
+    font-size: 16px;
+  }
+  
+  .footer-description {
+    font-size: 11px;
+  }
+  
+  .payment-icon {
+    font-size: 18px;
   }
 }
 

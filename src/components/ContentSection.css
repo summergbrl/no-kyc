@@ -496,16 +496,41 @@
 /* Mobile Responsive */
 @media (max-width: 768px) {
   .content-section {
-    padding: 2rem 0;
+    padding: 1.5rem 0;
   }
 
   .content-block {
-    padding: 1.5rem;
-    margin-bottom: 2rem;
+    padding: 1.25rem;
+    margin-bottom: 1.5rem;
+    border-radius: 16px;
   }
 
   .content-block h2 {
-    font-size: 24px;
+    font-size: 18px;
+    margin-bottom: 1rem;
+  }
+  
+  .content-block p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 0.75rem;
+  }
+  
+  .content-block .intro {
+    font-size: 13px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .content-block .highlight,
+  .content-block .commitment {
+    font-size: 13px;
+    padding: 0.75rem;
+    border-radius: 10px;
+  }
+  
+  .checklist li {
+    font-size: 12px;
+    padding: 0.5rem 0;
   }
 
   .verification-cards,
@@ -517,6 +542,151 @@
   .practices-grid,
   .reasons-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .verify-card,
+  .security-item,
+  .info-card-item,
+  .game-type,
+  .bonus-item,
+  .responsible-item,
+  .practice-item {
+    padding: 1rem;
+    border-radius: 10px;
+  }
+  
+  .verify-card h3,
+  .security-item h4,
+  .info-card-item h4,
+  .game-type h4,
+  .bonus-item h4,
+  .responsible-item h4,
+  .practice-item h4 {
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .verify-card p,
+  .security-item p,
+  .info-card-item p,
+  .game-type p,
+  .bonus-item p,
+  .responsible-item p,
+  .practice-item p {
+    font-size: 11px;
+  }
+  
+  .security-item h4 svg,
+  .info-card-item h4 svg,
+  .game-type h4 svg,
+  .bonus-item h4 svg,
+  .practice-item h4 svg {
+    font-size: 16px;
+  }
+  
+  .guide-step {
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .guide-step h4 {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .guide-step p,
+  .guide-step li {
+    font-size: 11px;
+  }
+  
+  .faq-item {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .faq-item h4 {
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .faq-item p {
+    font-size: 11px;
+  }
+  
+  .reason-item {
+    padding: 1rem;
+  }
+  
+  .reason-icon {
+    width: 48px;
+    height: 48px;
+    font-size: 24px;
+    margin-bottom: 0.75rem;
+  }
+  
+  .reason-item h4 {
+    font-size: 13px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .reason-item p {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-section {
+    padding: 1rem 0;
+  }
+  
+  .content-block {
+    padding: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .content-block h2 {
+    font-size: 16px;
+  }
+  
+  .content-block p {
+    font-size: 11px;
+  }
+  
+  .verify-card,
+  .security-item,
+  .info-card-item,
+  .game-type,
+  .bonus-item,
+  .responsible-item,
+  .practice-item {
+    padding: 0.75rem;
+  }
+  
+  .verify-card h3,
+  .security-item h4,
+  .info-card-item h4,
+  .game-type h4,
+  .bonus-item h4,
+  .responsible-item h4,
+  .practice-item h4 {
+    font-size: 12px;
+  }
+  
+  .verify-card p,
+  .security-item p,
+  .info-card-item p,
+  .game-type p,
+  .bonus-item p,
+  .responsible-item p,
+  .practice-item p {
+    font-size: 10px;
+  }
+  
+  .reason-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
   }
 }
 
