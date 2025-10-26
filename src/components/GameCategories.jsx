@@ -1,21 +1,33 @@
 import React from 'react'
 import { 
-  IoGameController, IoFlame, IoSparkles, IoStar, IoDiamond,
-  IoTrophySharp, IoDiscSharp, IoLayersSharp, IoCardSharp, IoGridSharp
+  IoGameController, IoFlame, IoSparkles, IoStar, IoDiamond, IoDiamondSharp,
+  IoTrophySharp, IoDiscSharp, IoLayersSharp, IoCardSharp, IoGridSharp,
+  IoTvSharp, IoCashSharp, IoRocketSharp, IoFootballSharp, IoBasketballSharp,
+  IoCubeSharp, IoAlbumsSharp, IoDiceSharp, IoWalletSharp, IoGiftSharp
 } from 'react-icons/io5'
 import './GameCategories.css'
 
 const categories = [
-  { name: 'Providers', icon: <IoGameController />, link: '#providers' },
-  { name: 'Top', icon: <IoFlame />, link: '#top' },
+  { name: 'All Games', icon: <IoGridSharp />, link: '#all', highlight: true },
+  { name: 'Top', icon: <IoFlame />, link: '#top', highlight: true },
   { name: 'New', icon: <IoSparkles />, link: '#new' },
-  { name: 'Popular', icon: <IoStar />, link: '#popular' },
-  { name: 'Top Live Casino', icon: <IoTrophySharp />, link: '#live-casino' },
+  { name: 'Slots', icon: <IoAlbumsSharp />, link: '#slots' },
+  { name: 'Live Casino', icon: <IoTvSharp />, link: '#live-casino' },
   { name: 'Roulette', icon: <IoDiscSharp />, link: '#roulette' },
-  { name: 'Game Shows', icon: <IoLayersSharp />, link: '#game-shows' },
   { name: 'Blackjack', icon: <IoCardSharp />, link: '#blackjack' },
-  { name: 'Hot Jackpots', icon: <IoDiamond />, link: '#jackpots' },
-  { name: 'Slots', icon: <IoGridSharp />, link: '#slots' }
+  { name: 'Baccarat', icon: <IoDiamondSharp />, link: '#baccarat' },
+  { name: 'Game Shows', icon: <IoLayersSharp />, link: '#game-shows' },
+  { name: 'Megaways', icon: <IoTrophySharp />, link: '#megaways' },
+  { name: 'Jackpots', icon: <IoCashSharp />, link: '#jackpots' },
+  { name: 'Dice Games', icon: <IoDiceSharp />, link: '#dice' },
+  { name: 'Crash Games', icon: <IoRocketSharp />, link: '#crash' },
+  { name: 'Virtual Sports', icon: <IoFootballSharp />, link: '#virtual-sports' },
+  { name: 'Sports', icon: <IoBasketballSharp />, link: '#sports' },
+  { name: 'Providers', icon: <IoGameController />, link: '#providers' },
+  { name: 'Bonus Buy', icon: <IoGiftSharp />, link: '#bonus-buy' },
+  { name: 'Table Games', icon: <IoCubeSharp />, link: '#table-games' },
+  { name: 'Popular', icon: <IoStar />, link: '#popular' },
+  { name: 'VIP', icon: <IoWalletSharp />, link: '#vip' }
 ]
 
 const GameCategories = () => {
@@ -37,7 +49,7 @@ const GameCategories = () => {
               <a 
                 key={index} 
                 href={category.link} 
-                className="category-item"
+                className={`category-item ${category.highlight ? 'highlight' : ''} ${index === 0 ? 'active' : ''}`}
               >
                 <span className="category-icon-wrapper">{category.icon}</span>
                 <span className="category-name">{category.name}</span>
