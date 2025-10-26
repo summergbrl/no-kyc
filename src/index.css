@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+html {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 :root {
   /* Colors */
   --primary-purple: #8b5cf6;
@@ -34,6 +39,8 @@ body {
   background: var(--dark-bg);
   color: var(--text-primary);
   overflow-x: hidden;
+  width: 100%;
+  position: relative;
 }
 
 /* Headings use casino-style font */
@@ -75,6 +82,7 @@ img {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 20px;
+  width: 100%;
 }
 
 /* Global Button Styles */

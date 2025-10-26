@@ -1,12 +1,16 @@
 .bonus-slider-section {
   padding: 4rem 0;
   position: relative;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .bonus-slider {
   position: relative;
   overflow: hidden;
   border-radius: 20px;
+  width: 100%;
+  max-width: 100%;
 }
 
 .slider-container {

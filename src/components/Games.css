@@ -1,5 +1,7 @@
 .games-section {
   padding: 4rem 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 .section-header {
@@ -40,6 +42,8 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1.5rem;
+  width: 100%;
+  max-width: 100%;
 }
 
 .game-card {

@@ -7,6 +7,8 @@
   padding: 2rem 0;
   overflow: hidden;
   background: linear-gradient(135deg, var(--dark-bg) 0%, #1a2332 100%);
+  width: 100%;
+  max-width: 100%;
 }
 
 .hero-background {
@@ -94,6 +96,8 @@
   opacity: 0;
   transform: translateY(30px);
   transition: all 1s ease;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 .hero-content.visible {
