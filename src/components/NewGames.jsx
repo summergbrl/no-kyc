@@ -3,14 +3,14 @@ import { IoSparkles } from 'react-icons/io5'
 import './Games.css'
 
 const newGames = [
-  { id: 1, name: 'Sugar Rush', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQz5VtLg8nXPzMxVqYbKw7J5L9hRQNcYm8XHw&s' },
-  { id: 2, name: 'Starlight Princess', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7YQNcLxPz8MYwQ5vXJ7K9L5hNQRcZm6XKHg&s' },
-  { id: 3, name: 'Wild West Gold', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNqW8LgXnYPzKxVqZbJw5L7M9hRQOcYn7XKw&s' },
-  { id: 4, name: 'Great Rhino Megaways', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMpX7LhYoZQzNyWqYcKx6M8N0iSRPdZo8YLx&s' },
-  { id: 5, name: 'The Dog House', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQY8Xp9MhZrRzOzXq7dLx8N9O1jTSQe7p9ZMy&s' },
-  { id: 6, name: 'Fruit Party', badge: 'new', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YQq0NiasS0PaYr8eMy9O0P2kUTRf8q0aNz&s' },
-  { id: 7, name: 'Aztec Gems', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSA9Rr1OjbtT1QbZs9fNz0P1Q3lVUSg9r1bO0&s' },
-  { id: 8, name: 'John Hunter', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTB0Ss2PkctU2RcZt0gO01Q2R4mWVTh0s2cP1&s' }
+  { id: 1, name: 'Sugar Rush', badge: 'new', image: 'https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/14593027/529213_366714.jpeg' },
+  { id: 2, name: 'Starlight Princess', badge: 'new', image: 'https://www.casinoreviews.net/assets/images/games/netent/starburst/game-poster.png' },
+  { id: 3, name: 'Wild West Gold', badge: 'new', image: 'https://online.casinocity.com/image_resize.ashx?type=game&imgid=62318&width=280' },
+  { id: 4, name: 'Great Rhino Megaways', badge: 'new', image: 'https://s3-eu-west-1.amazonaws.com/tpd/logos/678aa35d8b4319b084287ee9/0x0.png' },
+  { id: 5, name: 'The Dog House', badge: 'new', image: 'https://www.casino.org/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fvpd5gtrb1dbp%2F2UWTPeAVGYz573BxYrfPc5%2Fd44a4934aaad43de0db9350f975b4975%2Fbook-of-dead__1_.jpg&w=3840&q=75' },
+  { id: 6, name: 'Fruit Party', badge: 'new', image: 'https://itmmeerut.org/wp-content/uploads/2023/10/Aviator-Casino-Game.webp' },
+  { id: 7, name: 'Aztec Gems', image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-aMTydablP9qZPz1NLFUQroyaPeJT0ddN2w&s' },
+  { id: 8, name: 'John Hunter', image: 'https://fruityslots.com/wp-content/uploads/2023/10/Gates-of-Olympus-1000-Slot-jpg.webp' }
 ]
 
 const NewGames = () => {

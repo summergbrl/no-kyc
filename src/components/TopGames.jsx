@@ -4,13 +4,13 @@ import './Games.css'
 
 const topGames = [
   { id: 1, name: 'Gates of Olympus', badge: 'Drops & Wins', rank: 1, image: 'https://fruityslots.com/wp-content/uploads/2023/10/Gates-of-Olympus-1000-Slot-jpg.webp' },
-  { id: 2, name: 'Sweet Bonanza', badge: 'new', rank: 2, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSu7tGGIJ8iiKAWKUF9uIlpZYB01-rbovAwA&s' },
-  { id: 3, name: 'Book of Dead', rank: 3, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9fVXLp4y6T_RKxVHQb8YzB1Aw5xPB7jqNpg&s' },
-  { id: 4, name: 'Starburst', rank: 4, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRdC3qG4UyfDhKwJ_aVWwE5W5gU0kQXPYm-Gg&s' },
-  { id: 5, name: 'Aviator', rank: 5, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY6QmCZqK7VvKhYW5HL7LfBxCnXN8qKYNhbQ&s' },
-  { id: 6, name: 'Wolf Gold', badge: 'new', rank: 6, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjMKw5LN8Z-iBb7_3qJvlG9Y5xQHHxQvGHXQ&s' },
-  { id: 7, name: 'Big Bass Bonanza', rank: 7, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNPvLwX7mC5YbxW9xQJ8kFHp5gYdKLMxYPKw&s' },
-  { id: 8, name: 'Reactoonz', rank: 8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5qX7LVnHJw0NQB8YzX5L7j9K6pM8kW9wQXg&s' }
+  { id: 2, name: 'Sweet Bonanza', badge: 'new', rank: 2, image: 'https://custom-images.strikinglycdn.com/res/hrscywv4p/image/upload/c_limit,fl_lossy,h_9000,w_1200,f_auto,q_auto/14593027/529213_366714.jpeg' },
+  { id: 3, name: 'Book of Dead', rank: 3, image: 'https://www.casino.org/_next/image/?url=https%3A%2F%2Fimages.ctfassets.net%2Fvpd5gtrb1dbp%2F2UWTPeAVGYz573BxYrfPc5%2Fd44a4934aaad43de0db9350f975b4975%2Fbook-of-dead__1_.jpg&w=3840&q=75' },
+  { id: 4, name: 'Starburst', rank: 4, image: 'https://www.casinoreviews.net/assets/images/games/netent/starburst/game-poster.png' },
+  { id: 5, name: 'Aviator', rank: 5, image: 'https://itmmeerut.org/wp-content/uploads/2023/10/Aviator-Casino-Game.webp' },
+  { id: 6, name: 'Wolf Gold', badge: 'new', rank: 6, image: 'https://online.casinocity.com/image_resize.ashx?type=game&imgid=62318&width=280' },
+  { id: 7, name: 'Big Bass Bonanza', rank: 7, image: 'https://s3-eu-west-1.amazonaws.com/tpd/logos/678aa35d8b4319b084287ee9/0x0.png' },
+  { id: 8, name: 'Reactoonz', rank: 8, image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-aMTydablP9qZPz1NLFUQroyaPeJT0ddN2w&s' }
 ]
 
 const TopGames = () => {
