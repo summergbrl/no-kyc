@@ -3,14 +3,14 @@ import { IoGameControllerSharp } from 'react-icons/io5'
 import './Games.css'
 
 const topGames = [
-  { id: 1, name: 'Gates of Olympus', badge: 'Drops & Wins', rank: 1, image: 'https://images.unsplash.com/photo-1596838132731-3301c3fd4317?w=400&h=533&fit=crop&q=80' },
-  { id: 2, name: 'Turbo Diamonds', badge: 'new', rank: 2, image: 'https://images.unsplash.com/photo-1611068813580-c7cba4c1dd1e?w=400&h=533&fit=crop&q=80' },
-  { id: 3, name: 'Witches\' Book', rank: 3, image: 'https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=533&fit=crop&q=80' },
-  { id: 4, name: 'Book of Ra', rank: 4, image: 'https://images.unsplash.com/photo-1594026112284-02bb6f3352fe?w=400&h=533&fit=crop&q=80' },
-  { id: 5, name: 'Aviator', rank: 5, image: 'https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=400&h=533&fit=crop&q=80' },
-  { id: 6, name: 'SWOLL', badge: 'new', rank: 6, image: 'https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=400&h=533&fit=crop&q=80' },
-  { id: 7, name: 'Duel at Dawn', rank: 7, image: 'https://images.unsplash.com/photo-1522069169874-c58ec4b76be5?w=400&h=533&fit=crop&q=80' },
-  { id: 8, name: 'Reactoonz 2', rank: 8, image: 'https://images.unsplash.com/photo-1529310399831-ed472b81d589?w=400&h=533&fit=crop&q=80' }
+  { id: 1, name: 'Gates of Olympus', badge: 'Drops & Wins', rank: 1, image: 'https://fruityslots.com/wp-content/uploads/2023/10/Gates-of-Olympus-1000-Slot-jpg.webp' },
+  { id: 2, name: 'Sweet Bonanza', badge: 'new', rank: 2, image: 'https://pragmaticplay.net/wp-content/uploads/2020/06/SweetBonanza.png' },
+  { id: 3, name: 'Book of Dead', rank: 3, image: 'https://www.playngonetwork.com/casino/wp-content/uploads/game/book-of-dead/en/logo.png' },
+  { id: 4, name: 'Starburst', rank: 4, image: 'https://cdn.casinoorbit.com/prod/assets/images/game-thumb/5836.webp' },
+  { id: 5, name: 'Aviator', rank: 5, image: 'https://spribe.co/wp-content/uploads/2021/11/Aviator.jpg' },
+  { id: 6, name: 'Wolf Gold', badge: 'new', rank: 6, image: 'https://pragmaticplay.net/wp-content/uploads/2017/04/Wolf-Gold.png' },
+  { id: 7, name: 'Big Bass Bonanza', rank: 7, image: 'https://pragmaticplay.net/wp-content/uploads/2020/12/BigBassBonanza.png' },
+  { id: 8, name: 'Reactoonz', rank: 8, image: 'https://www.playngonetwork.com/casino/wp-content/uploads/game/reactoonz/en/logo.png' }
 ]
 
 const TopGames = () => {

@@ -3,14 +3,14 @@ import { IoSparkles } from 'react-icons/io5'
 import './Games.css'
 
 const newGames = [
-  { id: 1, name: 'Turbo Diamonds', badge: 'new', image: 'https://images.unsplash.com/photo-1611068813580-c7cba4c1dd1e?w=400&h=533&fit=crop&q=80' },
-  { id: 2, name: 'SWOLL', badge: 'new', image: 'https://images.unsplash.com/photo-1614850523459-c2f4c699c52e?w=400&h=533&fit=crop&q=80' },
-  { id: 3, name: '5 Relics of Power', badge: 'new', image: 'https://images.unsplash.com/photo-1571667221998-d6aa0817c4c7?w=400&h=533&fit=crop&q=80' },
-  { id: 4, name: 'Fruit Train Express', badge: 'new', image: 'https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?w=400&h=533&fit=crop&q=80' },
-  { id: 5, name: 'Cash Blitz', badge: 'new', image: 'https://images.unsplash.com/photo-1567427017947-545c5f8d16ad?w=400&h=533&fit=crop&q=80' },
-  { id: 6, name: 'Regal Spins 10', badge: 'new', image: 'https://images.unsplash.com/photo-1536599424071-0820a2b6e6d5?w=400&h=533&fit=crop&q=80' },
-  { id: 7, name: 'Lucky Penny', image: 'https://images.unsplash.com/photo-1620321023374-d1a68fbc720d?w=400&h=533&fit=crop&q=80' },
-  { id: 8, name: 'Book of Fallen', image: 'https://images.unsplash.com/photo-1541278107931-e006523892df?w=400&h=533&fit=crop&q=80' }
+  { id: 1, name: 'Sugar Rush', badge: 'new', image: 'https://pragmaticplay.net/wp-content/uploads/2023/02/SugarRush.png' },
+  { id: 2, name: 'Starlight Princess', badge: 'new', image: 'https://pragmaticplay.net/wp-content/uploads/2021/06/StarlightPrincess.png' },
+  { id: 3, name: 'Wild West Gold', badge: 'new', image: 'https://pragmaticplay.net/wp-content/uploads/2020/02/WildWestGold.png' },
+  { id: 4, name: 'Great Rhino Megaways', badge: 'new', image: 'https://pragmaticplay.net/wp-content/uploads/2020/07/GreatRhinoMegaways.png' },
+  { id: 5, name: 'The Dog House', badge: 'new', image: 'https://pragmaticplay.net/wp-content/uploads/2019/07/The-Dog-House.png' },
+  { id: 6, name: 'Fruit Party', badge: 'new', image: 'https://pragmaticplay.net/wp-content/uploads/2020/05/FruitParty.png' },
+  { id: 7, name: 'Aztec Gems', image: 'https://pragmaticplay.net/wp-content/uploads/2018/10/Aztec-Gems.png' },
+  { id: 8, name: 'John Hunter', image: 'https://pragmaticplay.net/wp-content/uploads/2019/03/John-Hunter-and-the-Tomb-of-the-Scarab-Queen.png' }
 ]
 
 const NewGames = () => {
