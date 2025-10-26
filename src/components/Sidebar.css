@@ -28,12 +28,18 @@
   cursor: pointer;
 }
 
-.logo-image {
+.sidebar-logo .logo-icon {
   width: 45px;
   height: 45px;
+  background: linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%);
   border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
   box-shadow: 0 4px 15px rgba(139, 92, 246, 0.3);
-  object-fit: cover;
 }
 
 .sidebar-logo .logo-text {

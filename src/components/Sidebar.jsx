@@ -50,7 +50,9 @@ const Sidebar = ({ isOpen, onClose }) => {
           className="sidebar-logo"
           whileHover={{ scale: 1.05 }}
         >
-          <img src="/logo.png" alt="No-KYC Casino" className="logo-image" />
+          <div className="logo-icon">
+            <span>no</span>
+          </div>
           <div className="logo-text">
             <span className="kyc-text">KYC</span>
             <span className="casino-text">Casino</span>

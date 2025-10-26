@@ -42,7 +42,9 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <img src="/logo.png" alt="No-KYC Casino" className="footer-logo-img" />
+              <div className="logo-icon">
+                <span>no</span>
+              </div>
               <div className="logo-text">
                 <span className="kyc-text">KYC</span>
                 <span className="casino-text">Casino</span>

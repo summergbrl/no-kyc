@@ -19,7 +19,7 @@ const TopBar = ({ onMenuClick }) => {
 
         {/* Logo for Mobile */}
         <div className="topbar-logo-mobile">
-          <img src="/logo.png" alt="No-KYC Casino" className="logo-mobile-img" />
+          <div className="logo-icon-small">no</div>
           <span>KYC</span>
         </div>
 
